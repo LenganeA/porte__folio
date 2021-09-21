@@ -1,0 +1,586 @@
+body
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #666;
+}
+
+/* -------header------ */
+header
+{
+    height: auto;
+    padding: 10px 0;
+    /* border-bottom: 1px solid #000; */
+    background-color: rgba(0, 0, 0, 0.603);
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+/* -----sections------ */
+.sections
+{
+    padding: 20px 0;
+}
+
+/* -------overlay----- */
+.overlay
+{
+    position: absolute;
+    top:200px;
+    bottom: 100px;
+    left: 100px;
+    right:100px;
+    background-color: rgba(0, 0, 0, 0.678);
+}
+/* ------icon------ */
+header i.icon
+{
+    position: absolute;
+    top:30px;
+    right: 50px;
+    z-index: 10;
+    display: none;
+    color: white;
+}
+header i.icon:hover
+{
+    color: rgb(255, 255, 0);
+}
+/* ---------logo------ */
+header .logo img
+{
+    width: 100px;
+    height: auto;
+}
+header nav .nav-list
+{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 0;
+}
+header nav .nav-list .list a
+{
+    display: block;
+    padding: 15px 0;
+    margin: 9px 0;
+    font-size: 1.3em;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+header nav .nav-list .list a:hover
+{
+    color: yellow;
+}
+@media (max-width:993px)
+{
+    header nav .nav-list
+    {
+        display: none;
+        text-align: center;
+        padding: 0;
+    }
+    header .logo
+    {
+        /* text-align: left; */
+    }
+    header i.icon
+    {
+        display: block;
+    }
+}
+
+/* ---------home sections-------- */
+.home
+{
+    height: 700px;
+    background-image: url('images/01.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    /* border: 1px solid black; */
+    /* border-bottom: 3px solid black; */
+    box-shadow: 0px 0px 15px black ;
+}
+.home .home-content
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+}
+.home .home-title
+{
+    color: yellow;
+    font-size: 30px;
+    line-height: 10px;
+    transition: all 0.3s;
+}
+.home .home-body
+{
+    color: white;
+    font-size: 3em;
+    text-shadow: 5px 5px 10px black;
+    font-weight: bold;
+    transition: all 0.3s;
+
+}
+.home .home-desc
+{
+    color: white;
+    font-size: 1.2em;
+}
+@media (max-width:1343px) 
+{
+    .home .home-body
+    {
+        font-size: 2.4em;
+    }
+}
+@media (max-width:1150px) 
+{
+    .home .home-body
+    {
+        font-size: 2em;
+    }
+}
+.home .home-title
+{
+    font-size: 20px;
+}
+button.button
+{
+    background-color: rgba(0, 0, 0, 0.801);
+    color: white !important; 
+    width: auto;
+    text-align: center;
+    padding: 10px 10px;
+    transition: all 800ms ease-in-out;
+}
+button.button:hover
+{
+    background-color: rgba(255, 255, 0, 0.651);
+    color: black !important;
+    outline: none;
+}
+.sticky
+{
+    background-color: rgba(0, 0, 0, 0.842);
+    color: yellow;
+}
+
+.sections
+{
+    margin-bottom: 0;
+}
+/* --------section SERVICES-------- */
+.services
+{
+    /* border: 1px solid #666; */
+    /* box-shadow: 5px 5px 8px black; */
+    background-color: #666666;
+    height: 630px;
+    transition: all 0.5s ease-in-out;
+}
+@media (max-width:999px) 
+{
+    .services
+    {
+        height: 1070px;
+    }
+    
+}
+.services-block
+{
+    margin-top: 50px;
+}
+
+.services .services-info h2
+{
+    width: 200px;
+    height: 55px;
+    border: 3px solid yellow;
+    border-radius: 28px;
+    padding: 10px 0;
+    text-align: center;
+    transform: translate(100px);
+    color: white;
+    text-shadow: 5px 3px 10px black;
+    font-size: 1.7em;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+.services-one
+{
+    border: 1px solid white;
+}
+/* ------------card-------- */
+.card-block
+{
+    margin: auto;
+}
+.card-img
+{
+    padding: 0 !important;
+    width: 210px;
+    margin-left: 18px;
+}
+.card-img img
+{
+    border-radius: 8px;
+    box-shadow: 2px 5px 20px black;
+    width: 200px;
+    height: auto;
+    /* margin: auto; */
+}
+h5.card-title
+{
+    font-size: 1.5em;
+    color: yellow;
+    font-weight: bold;
+    margin: auto;
+}
+p.card-text
+{
+    color: white;
+    margin-top: 10px;
+}
+/* ---------card body entete------ */
+.card-block-entete
+{
+    max-width: 500px;
+}
+.card-body
+{
+    /* width: 320px !important; */
+    width: 100% !important;
+} 
+@media (max-width:795px) 
+{
+    .card-body
+    {
+        width: 500px !important;
+    } 
+}
+
+/* --------competences-------- */
+
+.competences .competences_info h2
+{
+    width: 250px;
+    height: 55px;
+    border: 3px solid yellow;
+    border-radius: 28px;
+    padding: 10px 0;
+    text-align: center;
+    transform: translate(100px);
+    color: white;
+    text-shadow: 5px 3px 10px black;
+    font-size: 1.7em;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+.competences
+{
+    /* border: 1px solid #666; */
+    padding-top: 20px;
+}
+section.competences
+{
+    height: 600px;
+    /* background-image: url('images/competences.jpg'); */
+    background-color: #00000085;
+    /* background-size: cover;
+    background-position: center; */
+    position: relative;
+    transition: all 0.3s;
+    /* box-shadow: 0px 0px 15px black ; */
+}
+@media (max-width:1000px) 
+{
+    section.competences
+    {
+        height: 850px;
+    }
+}
+.compt_head
+{
+    color: yellow;
+    font-weight: bold;
+    font-size: xx-large;
+    font-family: sans-serif;
+}
+.compt_desc
+{
+    color: white;
+    font-family: sans-serif;
+    line-height: 20px;
+    letter-spacing: 3px;
+}
+/* -------progress bar-------- */
+.progress-title
+{
+    width: 100%;
+    height: auto;
+}
+.progress
+{
+    
+    height: 25px;
+    background-color: black;
+    border-radius: 20px;
+    border: 1px solid black;
+    box-shadow: 0 2px 2px white;
+    overflow: visible;
+    position: relative;
+}
+.progress .progress-bar
+{
+    border-radius: 20px;
+    border: 1px solid black;
+    animation: animate-positive 2s;
+}
+.progress .progress-value
+{
+    width: 65px;
+    height: 25px;
+    line-height: 25px;
+    background-color: black;
+    font-size: 15px;
+    color: yellow;
+    font-weight: bold;
+    border-radius: 0 0 15px 15px;
+    border: 1px solid #000;
+    border-top: none;
+    box-shadow: 0 2px 2px white;
+    position: absolute;
+    bottom: -25px;
+    right: 60px;
+}
+@-webkit-keyframes animate-positive
+{
+    0%
+    {
+        width: 0;
+    }
+}
+
+/* --------porte folio-------- */
+
+.portefolio-info h2, .contact_info h2
+{
+    margin-top: 30px;
+    width: 250px;
+    height: 55px;
+    border: 3px solid yellow;
+    border-radius: 28px;
+    padding: 10px 0;
+    text-align: center;
+    transform: translate(100px);
+    color: white;
+    text-shadow: 5px 3px 10px black;
+    font-size: 1.7em;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+.portefolio-block .card img
+{
+    /* border-radius: 8px; */
+    box-shadow: 2px 5px 20px black !important;
+    width: 500px;
+    height: auto;
+    /* margin: auto; */
+}
+.porte_f
+{
+    width: 425px;
+    transition: all 0.3s ease-in;
+    height: auto;
+    /* border: 1px solid white; */
+    background-color: rgba(0, 0, 0, 0.575);
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+.porte_f img
+{
+    width: 400px;
+    transition: all 0.3s ease-in;
+    height: 300px;
+    border: 1px solid black;
+    /* border-radius: 10px; */
+}
+.porte_f h3
+{
+    color: yellow;
+    font-size: 2.3em;
+    font-weight: bold;
+}
+.porte_f p
+{
+    color: white;
+}
+
+@media (max-width: 995px) 
+{
+    .porte_f
+    {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .porte_f img
+    {
+        width: 600px;
+        transform: translate(45px);
+    }
+    .porte_f h3 , p, .porte_f .porte_f-footer
+    {
+        text-align: center;
+    }
+}
+
+/* ----------Contact--------- */
+.contact_info
+{
+    transform: translateY(30px);
+}
+.contact_info h2
+{
+    width: 250px;
+    height: 55px;
+    border: 3px solid yellow;
+    border-radius: 28px;
+    padding: 10px 0;
+    text-align: center;
+    transform: translate(100px);
+    color: white;
+    text-shadow: 5px 3px 10px black;
+    font-size: 1.7em;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+.contact_block
+{
+    background-image: url('images/img_cont.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 700px;
+    transition: all 0.3s ease-in-out;
+}
+form
+{
+    background-color: yellow;
+    width: 100%;
+    padding: 10px 50px;
+    padding-bottom: 10px;
+}
+.sub
+{
+    width: 50%;
+    margin: auto;
+}
+.sub:hover
+{
+    background-color: #000;
+    color: white;
+}
+form h3
+{
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px auto;
+}
+.cont_img img
+{
+    text-align: center;
+    margin: auto;
+}
+.cont_img
+{
+    margin: auto;
+}
+.cont_img i.fa
+{
+    font-size: 2em;
+    color:black;
+    margin: 10px;
+    font-weight: bold;
+}
+@media (max-width:995px) 
+{
+    .contact_block
+    {
+        background-image: url('images/img_cont.jpg');
+        background-position: center;
+        background-size: cover;
+        height: 1150px;
+    }
+    .cont_img
+    {
+        text-align: center;
+    }
+}
+/* ---------footer---------- */
+.foot_ent
+{
+    font-weight: bold;
+    color: yellow;
+}
+footer .foot_text
+{
+    color: white;
+}
+footer img
+{
+    
+    width: 200px;
+    margin: auto;
+}
+footer img:hover
+{
+    transform: rotate(360deg);
+    transition: all 2s ease-in;
+    /* transform: skew(0deg); */
+}
+footer h1
+{
+    color: white;
+    font-weight: bold;
+    text-shadow: 5px 5px 8px black;
+    margin-bottom: 20px;
+}
+footer .group-icon
+{
+    font-size: 2em;
+    color: black;
+}
+footer .foot_info p
+{
+    color: white;
+
+}
+footer .group-icon .fa:hover
+{
+    color: yellow;
+    transition: all 1s ease-in-out;
+}
+.foot_fin
+{
+    height: 60px;
+    background-color: black;
+    color: white;
+
+}
+.foot_fin .foot_end p
+{
+    margin-top: 20px;
+    font-weight: normal;
+    font-size: 0.7em;
+}
+.foot_fin .foot_end p.text
+{
+    word-spacing: 40px;
+}
